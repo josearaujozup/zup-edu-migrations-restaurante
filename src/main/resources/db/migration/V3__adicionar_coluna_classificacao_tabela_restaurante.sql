@@ -1,0 +1,1 @@
+ALTER TABLE restaurante ADD classificacao varchar(30) NOT NULL DEFAULT 'CLASSIC';

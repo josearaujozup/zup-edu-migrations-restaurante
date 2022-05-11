@@ -1,0 +1,1 @@
+ALTER TABLE restaurante ADD usa_cupom BOOLEAN NOT NULL DEFAULT false;

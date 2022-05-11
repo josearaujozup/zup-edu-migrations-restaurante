@@ -1,11 +1,6 @@
 package br.com.zup.edu.migrationrestaurante.restaurante;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "restaurante")
@@ -39,6 +34,11 @@ public class Restaurante {
 	private String email;
 	
 	private String site;
+
+	private Boolean usaCupom;
+
+	@Enumerated(EnumType.STRING)
+	private ClassificacaoRestaurante classificacao;
 	
 	public Restaurante() {
 	}
